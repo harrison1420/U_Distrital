@@ -1,0 +1,24 @@
+
+table {
+    background-color: yellow;
+    border-collapse: collapse;
+    border: 2px dotted hsl(0, 0%, 60%);
+    table-layout: fixed;
+    width: 50%;   
+    
+  }
+  
+
+  th, td {
+    border: 1px dotted #999;
+    padding: 8px;
+    text-align: left;
+  }
+
+  th {
+    background-color:yellow;
+  }
+
+  p {
+    margin-top: 0;
+  }

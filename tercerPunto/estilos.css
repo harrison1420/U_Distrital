@@ -1,0 +1,195 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  grid-area: header;
+  background-color: #0069a4;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.header .titulo {
+  color: whitesmoke;
+  font-family: sans-serif, Verdana, Geneva, Tahoma;
+  width: 100wh;
+}
+.header .logo img {
+  border-radius: 35%;
+}
+.header .titulo {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.barraNavegacion ul {
+  background-color: #0069a4;
+  padding-top: 25px;
+  padding-left: 10px;
+}
+.barraNavegacion ul li {
+  display: inline;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  text-decoration: none;
+}
+.barraNavegacion ul li a {
+  text-decoration: none;
+  color: whitesmoke;
+  background-color: #0047a4;
+  border: rgba(0, 0, 0, 0.507) solid 1px;
+  border-radius: 20px;
+  padding: 5px;
+  display: inline-block;
+}
+.barraNavegacion ul li a:hover {
+  color: black;
+  font-style: inherit;
+  background-color:rgb(0, 153, 255);
+  transition: 0.5s;
+  transform: skewX(-5deg) translateY(2px);
+}
+
+main {
+  min-height: calc(100vh - 105px - 110px);
+}
+
+section {
+
+  border-radius: 30px;
+  background-color: rgba(245, 245, 245, 0.55);
+  padding: 15px;
+  margin: 5px;
+}
+
+h2 {
+  
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 15px;
+}
+
+.mainInicio .establecimiento {
+  width: auto;
+  max-height: 100%;
+  grid-area: establecimiento;
+  
+}
+.mainInicio .establecimiento div {
+  height: 100%;
+  width: 100%;
+}
+.mainInicio .establecimiento div img {
+  height: 100%;
+  width: 100%;
+  min-width: 220px;
+  min-height: 360px;
+  object-fit: cover;
+  max-height: 65vh;
+}
+.mainInicio .productosYServicios {
+  grid-area: productosYServicios;
+  
+}
+.mainInicio .productosYServicios .miniFotosPyS div {
+  display:inline-flex;
+  border-radius: 20px;
+  flex-direction: column;
+  
+}
+.mainInicio .productosYServicios .miniFotosPyS div div {
+  margin-top: 150px;
+  height: 30px;
+  width: 75%;
+  background-color: blue;
+  align-self: center;
+  border-radius: 20px;
+  border: 3px solid;
+  border-color: red;
+  
+}
+.mainInicio .productosYServicios .miniFotosPyS div div p {
+  text-align: center;
+  color: rgb(245, 245, 245);
+  text-shadow: 20px;
+  font-size: medium;
+  
+}
+.mainInicio .productosYServicios .miniatura, .mainInicio .productosYServicios #Accesorios, .mainInicio .productosYServicios #Mantenimiento, .mainInicio .productosYServicios #Juegos, .mainInicio .productosYServicios #Controles, .mainInicio .productosYServicios #Binoculares, .mainInicio .productosYServicios #LentesDeContacto, .mainInicio .productosYServicios #LentesRecetados, .mainInicio .productosYServicios #LentesDeSol {
+  width: 310px;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  border: 2px solid;
+  border-color:black;
+  
+}
+.mainInicio .productosYServicios .miniatura:hover, .mainInicio .productosYServicios #Accesorios:hover, .mainInicio .productosYServicios #Mantenimiento:hover, .mainInicio .productosYServicios #Controles :hover, .mainInicio .productosYServicios #Juegos :hover {
+  filter: grayscale(50%);
+}
+.mainInicio .productosYServicios #Controles {
+  background-image: url("imagenesProductos/controles.jpg");
+}
+.mainInicio .productosYServicios #Juegos  {
+  background-image: url("imagenesProductos/R\ \(6\).jpeg");
+}
+.mainInicio .productosYServicios #Mantenimiento {
+  background-image: url("imagenesProductos/mantenimiento.jpg");
+}
+
+.mainInicio .productosYServicios #Accesorios {
+  background-image: url("imagenesProductos/accesorios.jpeg");
+}
+.mainInicio .productosYServicios .miniFotosPyS {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.footer {
+  grid-area: footer;
+  background-color: #0069a4;
+  text-align: center;
+  padding-top: 25px;
+  margin-top: 10px;
+}
+.footer a {
+  padding: 10px;
+}
+.footer p {
+  padding-top: 8px;
+  margin-bottom: 0px;
+}
+.footer i {
+  display: inline-block;
+  font-size: xx-large;
+  height: auto;
+  color: whitesmoke;
+  text-align: center;
+}
+.footer i:hover {
+  color: black;
+  transform: translateY(-5px);
+  transition: 0.75s;
+}
+.miniaturas {
+    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.miniaturas .fotosMiniatura img {
+  width: 580px;
+  height: 400px;
+  min-height: 120px;
+}
+
